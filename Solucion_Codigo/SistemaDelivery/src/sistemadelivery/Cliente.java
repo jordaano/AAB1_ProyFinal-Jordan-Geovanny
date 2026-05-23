@@ -1,5 +1,6 @@
 package sistemadelivery;
-
+import java.io.Serializable;
+import java.util.Scanner;
 public class Cliente {
 
     private String nombre;
@@ -12,10 +13,6 @@ public class Cliente {
         this.id = id;
         this.direccion = direccion;
         this.distanciaKm = distanciaKm;
-    }
-    public void mostrarCliente(){
-        
-        
     }
 
     public String getNombre() {
@@ -49,6 +46,9 @@ public class Cliente {
     public void setDistanciaKm(double distanciaKm) {
         this.distanciaKm = distanciaKm;
     }
-    
-    
+    public void mostrarCliente(){
+        System.out.println(); 
+        
+    }
+
 }
