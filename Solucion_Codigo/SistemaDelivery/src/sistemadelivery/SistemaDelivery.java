@@ -5,18 +5,74 @@ import java.io.*;
 public class SistemaDelivery {
 
     
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        // TODO code application logic here
+        SistemaDelivery sistema = new SistemaDelivery();
+
+        sistema.menuPrincipal();
         
         
     }
     public void menuPrincipal(){
-    
-    }
-    public void crearPedido(Pedido pedido){
-        try {
+        int opcion;
+        do{
+           System.out.println("1. Crear pedido");
+           System.out.println("2. Mostrar pedido");
+           System.out.println("3. Salir");
 
-                FileOutputStream archivo = new FileOutputStream("pedidos.dat");
+           opcion = sc.nextInt();
+
+           switch(opcion){
+
+               case 1:
+                   crearPedido();
+                   break;
+
+               case 2:
+                   mostrarPedido();
+                   break;
+
+           }
+        }while(opcion!=3);
+    }
+    public void crearPedido(){
+        try {
+            sc.nextLine();
+            System.out.println("Nombre Cliente: ");
+            String nombre = sc.nextLine();
+            System.out.println("Id: ");
+            String id = sc.nextLine();
+            System.out.println("Direccion: ");
+            String direccion = sc.nextLine();
+            System.out.println("Distancia (KM)");
+            double distanciaKm = sc.nextDouble();
+            
+            Cliente c = new Cliente(nombre, id, direccion,distanciaKm);
+            Pedido pedido = new Pedido(c);
+            sc.nextLine();
+
+            System.out.println("Nombre del plato:");
+            String nomPlato = sc.nextLine();
+
+            System.out.println("Precio:");
+            double precio = sc.nextDouble();
+
+            System.out.println("Cantidad:");
+            int cantidad = sc.nextInt();
+
+            Platos plato = new Platos(
+                    nomPlato,
+                    precio,
+                    10,
+                    0
+            );
+
+            DetallePedido detalle =
+                    new DetallePedido(plato, cantidad);
+
+            pedido.agregarDetalle(detalle);
+
+                FileOutputStream archivo = new FileOutputStream("pedidos.dat",true);
 
                 ObjectOutputStream escritor = new ObjectOutputStream(archivo);
 
@@ -43,9 +99,9 @@ public class SistemaDelivery {
             pedido = (Pedido)Lector.readObject();
             
             Lector.close();
-            
-            System.out.println(pedido);
-            
+            if (pedido != null){
+                pedido.mostrarPedido();
+            }
         }catch(Exception e){
             System.err.println("!ERROR " + e.getMessage()+"!");
         }

@@ -1,14 +1,12 @@
 package sistemadelivery;
-import java.util.Scanner;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Platos {
+public class Platos implements Serializable {
     private String nombre;
     private double precio;
     private int stock;
     private int cantVendido;
-    Scanner sc = new Scanner(System.in);
     public Platos(String nombre, double precio, int stock, int cantVendido) {
         this.nombre = nombre;
         this.precio = precio;
@@ -48,18 +46,21 @@ public class Platos {
         this.cantVendido = cantVendido;
     }
     
-    public void mostrarInfo (){
-    
-    }
     public void actualizarStock(int cantidad){
         
-        System.out.println("Ingrese la cantidad para actualizar el Stock");
-        cantidad = sc.nextInt();
-        for(int i= 0; i<cantidad;i++){
-            this.stock += cantidad;
-        }
-    
+        this.stock += cantidad;
     }
-    public void vender(int cantidad){
+    public void reducirStock(int cantidad){
+        if(cantidad <= stock){
+
+            stock -= cantidad;
+
+        }else{
+
+            System.out.println("Stock insuficiente");
+        }
+    }
+    public void ventas(int cantidad){
+        cantVendido += cantidad;
     }
 }

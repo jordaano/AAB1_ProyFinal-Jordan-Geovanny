@@ -1,7 +1,6 @@
 package sistemadelivery;
 import java.io.Serializable;
-import java.util.Scanner;
-public class DetallePedido {
+public class DetallePedido implements Serializable{
 
     private Platos plato;
     private int cantidad;

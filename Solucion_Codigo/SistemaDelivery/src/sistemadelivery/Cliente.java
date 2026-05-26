@@ -1,7 +1,6 @@
 package sistemadelivery;
 import java.io.Serializable;
-import java.util.Scanner;
-public class Cliente {
+public class Cliente implements Serializable{
 
     private String nombre;
     private String id;
@@ -47,8 +46,10 @@ public class Cliente {
         this.distanciaKm = distanciaKm;
     }
     public void mostrarCliente(){
-        System.out.println(); 
-        
+        System.out.println("Nombre del cliente: " + nombre);
+        System.out.println("Id del cliente: " + id);
+        System.out.println("Direccion del cliente: " + direccion);
+        System.out.println("Distancia en km: " + distanciaKm+" KM");
     }
 
 }

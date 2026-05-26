@@ -2,16 +2,17 @@
 package sistemadelivery;
 import java.io.Serializable;
 import java.util.Scanner;
-public class Restaurante {
+import java.util.*;
+public class Restaurante implements Serializable {
 
     private String nombre;
-    private Platos menu;
+    private ArrayList<Platos> menu;
     private double ventas;
     Scanner sc = new Scanner(System.in);
-    public Restaurante(String nombre, Platos menu, double ventas) {
+    public Restaurante(String nombre) {
         this.nombre = nombre;
-        this.menu = menu;
-        this.ventas = ventas;
+        this.menu = new ArrayList<>();
+        this.ventas = 0;
     }
 
     public String getNombre() {
@@ -22,11 +23,11 @@ public class Restaurante {
         this.nombre = nombre;
     }
 
-    public Platos getMenu() {
+    public ArrayList<Platos> getMenu() {
         return menu;
     }
 
-    public void setMenu(Platos menu) {
+    public void setMenu(ArrayList<Platos> menu) {
         this.menu = menu;
     }
 
@@ -39,39 +40,29 @@ public class Restaurante {
     }
     public void agregarPlato(Platos plato){
         
-        int cant = 0;
-        System.out.println("Cuantos platos desea agregar al menu");
-        cant = sc.nextInt();
-        for(int i =0;i<cant;i++){
-            System.out.println("Ingrese el ["+i+"] plato ");
-            plato[i] = sc.nextLine();
-        }
-        
+        menu.add(plato);
     }
     public void mostrarMenu(Platos plato){
-        System.out.println("El MENU DISPONIBLE ES: ");
-        System.out.println("Nombre: "+plato.getNombre()+"\n Precio: " 
-                    + plato.getPrecio() + "Cantidad en Stock: "+ plato.getStock());
-        
+        System.out.println("El MENU DEL RESTAURANTE "+nombre+": ");
+        for(int i = 0; i<menu.size();i++){
+            System.out.println("Nombre: "+plato.getNombre()+"\n Precio: " 
+                        + plato.getPrecio() + "Cantidad en Stock: "+ plato.getStock());
+        }
     }
     public Platos buscarPlato(String nombre){
-        Platos plato;
-        plato = null;
-        System.out.println("Ingrese el plato que desea buscar");
-        nombre = sc.nextLine();
-        if( plato.getNombre() == nombre){
-            System.out.println("Su plato se encuentra en Stock");
-            System.out.println("Nombre: "+plato.getNombre()+"\n Precio: " 
-                    + plato.getPrecio() + "Cantidad en Stock: "+ plato.getStock());
-        }else {
-            System.out.println("Su plato no se encuentra en Stock");
+        for(int i = 0; i < menu.size(); i++){
+
+            if(menu.get(i).getNombre().equalsIgnoreCase(nombre)){
+
+                return menu.get(i);
+            }
         }
-        
-        return plato;
+
+        return null;
     }
     
-    public double registrarVentas(double monto){
-        
+    public void registrarVentas(double monto){
+        ventas +=monto;
     }
     
 }
