@@ -1,4 +1,4 @@
-package sistemadelivery;
+package Controlador;
 import java.io.Serializable;
 public class DetallePedido implements Serializable{
 

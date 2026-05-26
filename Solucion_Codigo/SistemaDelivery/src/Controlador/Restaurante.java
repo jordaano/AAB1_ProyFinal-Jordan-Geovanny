@@ -1,5 +1,5 @@
 
-package sistemadelivery;
+package Controlador;
 import java.io.Serializable;
 import java.util.Scanner;
 import java.util.*;
@@ -8,7 +8,7 @@ public class Restaurante implements Serializable {
     private String nombre;
     private ArrayList<Platos> menu;
     private double ventas;
-    Scanner sc = new Scanner(System.in);
+    private transient Scanner sc = new Scanner(System.in);
     public Restaurante(String nombre) {
         this.nombre = nombre;
         this.menu = new ArrayList<>();
@@ -42,11 +42,24 @@ public class Restaurante implements Serializable {
         
         menu.add(plato);
     }
-    public void mostrarMenu(Platos plato){
+    public void mostrarMenu(){
         System.out.println("El MENU DEL RESTAURANTE "+nombre+": ");
         for(int i = 0; i<menu.size();i++){
-            System.out.println("Nombre: "+plato.getNombre()+"\n Precio: " 
-                        + plato.getPrecio() + "Cantidad en Stock: "+ plato.getStock());
+            System.out.println("Nombre: "+menu.get(i).getNombre() );
+            System.out.println("Precio: "+ menu.get(i).getPrecio());
+            System.out.println("Cantidad en Stock: "+ menu.get(i).getStock());
+            
+        }
+        System.out.println("==================================");
+    }
+    public void mostrarInventario(){
+
+    System.out.println("=== INVENTARIO DEL RESTAURANTE " + nombre + " ===");
+
+        for(int i = 0; i < menu.size(); i++){
+            System.out.println("Plato: " + menu.get(i).getNombre());
+            System.out.println("Stock: " + menu.get(i).getStock());
+            System.out.println("----------------------");
         }
     }
     public Platos buscarPlato(String nombre){
