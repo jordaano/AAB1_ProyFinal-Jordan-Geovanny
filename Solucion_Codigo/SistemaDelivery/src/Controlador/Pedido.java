@@ -39,16 +39,23 @@ public class Pedido implements Serializable{
     public void agregarDetalle(DetallePedido detalle){
         this.detallepedido.add(detalle);
     }
-    public double calcularTotalPedido() {
+    public double calcularSubtotal() {
         double subtotal = 0;
         for (int i = 0; i < detallepedido.size(); i++) {
             subtotal += detallepedido.get(i).calcularSubTotal();
         }
-        
-        double impuesto = subtotal * 0.15; 
-        double costoEnvio = cliente.getDistanciaKm() * 0.60; // Tasa por kilómetro
-        
-        return subtotal + impuesto + costoEnvio;
+        return subtotal;
+    }
+    public double calcularIVA() {
+        return calcularSubtotal() * 0.15;
+    }
+
+    public double calcularCostoEnvio() {
+        return cliente.getDistanciaKm() * 0.60; 
+    }
+
+    public double calcularTotalPedido() {
+        return calcularSubtotal() + calcularIVA() + calcularCostoEnvio();
     }
 
     

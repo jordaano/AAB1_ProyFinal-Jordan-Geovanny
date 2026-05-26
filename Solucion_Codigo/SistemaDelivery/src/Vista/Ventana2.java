@@ -63,9 +63,9 @@ public static ArrayList<Restaurante> restaurantes = new ArrayList<>();
                         .addComponent(jLabel2))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(125, 125, 125)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnCrearPedido)
-                            .addComponent(jLabel3))))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel3)
+                            .addComponent(btnCrearPedido))))
                 .addContainerGap(126, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -190,17 +190,26 @@ public static ArrayList<Restaurante> restaurantes = new ArrayList<>();
                     
                     nuevoPedido.agregarDetalle(detalle);
                     
+                    double subtotal = nuevoPedido.calcularSubtotal();
+                    double iva = nuevoPedido.calcularIVA();
+                    double delivery = nuevoPedido.calcularCostoEnvio();
                     double totalFinal = nuevoPedido.calcularTotalPedido();
                     
                     rest.registrarVentas(totalFinal);
                     controlador.guardarDatos();
                     
-                    String recibo = "=== RECIBO ===\n" +
-                                "Cliente: " + cliente.getNombre() + "\n" +
-                                "Restaurante: " + rest.getNombre() + "\n" +
-                                "Plato: " + plato.getNombre() + " (x" + cantidad + ")\n" +
-                                "-----------------------------------------------\n" +
-                                "Total: $" + String.format("%.2f", totalFinal);
+                    String recibo = "============= COMPROBANTE DE COMPRA =============\n" +
+                                " Cliente: " + cliente.getNombre() + "\n" +
+                                " Dirección: " + cliente.getDireccion() + "\n" +
+                                " Restaurante: " + rest.getNombre() + "\n" +
+                                " Item pedido: " + plato.getNombre() + " (x" + cantidad + ")\n" +
+                                "=================================================\n" +
+                                " Subtotal:               $" + String.format("%.2f", subtotal) + "\n" +
+                                " IVA (15%):              $" + String.format("%.2f", iva) + "\n" +
+                                " Costo Delivery:         $" + String.format("%.2f", delivery) + " (" + distancia + " KM)\n" +
+                                "-------------------------------------------------\n" +
+                                " TOTAL A PAGAR:          $" + String.format("%.2f", totalFinal) + "\n" +
+                                "=================================================";
                                 
                 javax.swing.JOptionPane.showMessageDialog(this, recibo);
                 
@@ -213,27 +222,7 @@ public static ArrayList<Restaurante> restaurantes = new ArrayList<>();
     }
     }//GEN-LAST:event_btnCrearPedidoActionPerformed
 
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new Ventana2().setVisible(true));
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> ComboPlatos;
