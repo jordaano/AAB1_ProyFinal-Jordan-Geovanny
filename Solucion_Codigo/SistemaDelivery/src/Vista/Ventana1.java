@@ -154,7 +154,7 @@ public class Ventana1 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAgregarRestauranteActionPerformed
 
     private void btnAgregarPlatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarPlatoActionPerformed
-        if(controlador.inventarioPatio.isEmpty()){
+        if(controlador.listaRestaurantes.isEmpty()){
             JOptionPane.showMessageDialog(null, "Primero cree el restaurante");
             return;
         }
