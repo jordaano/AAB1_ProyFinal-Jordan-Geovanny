@@ -1,0 +1,17 @@
+======= FACTURA =======
+
+Nombre: sebastian 
+Cedula: 1150107132
+Direccion: esteban godoy
+
+PEDIDO:
+Ramen x2 = $17.00
+Dumplins x1 = $7.00
+
+----------------
+Subtotal: $24.00
+IVA: $3.60
+TOTAL: $27.60
+-----------------------
+Delivery: $2.00
+TOTAL NETO A PAGAR: $29.60

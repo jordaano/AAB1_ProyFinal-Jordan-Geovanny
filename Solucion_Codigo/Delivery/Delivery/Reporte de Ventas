@@ -1,0 +1,47 @@
+=================================================
+     REPORTE DE VENTAS Y CIERRE DE CAJA          
+=================================================
+
+1. RENDIMIENTO DE RESTAURANTES:
+   -> Mayor volumen de venta: Spanish ($45.43)
+   -> Menor volumen de venta: Chinese ($0.00)
+
+2. PREFERENCIAS DEL CONSUMIDOR:
+   -> Producto más vendido: Gazpacho x3 = $15.00 (1 unidades)
+
+3. BALANCE ECONÓMICO GLOBAL:
+   -> Total Recaudado en Caja: $77.48
+=================================================
+
+======= REPORTE GENERAL DE VENTAS DEL DÍA =======
+
+Cantidad de pedidos procesados: 2
+Ingresos totales de la jornada: $77.48
+-------------------------------------------------
+
+PEDIDO #1
+Cliente: sebastian | Total: $45.425
+Productos:
+Gazpacho x3 = $15.00
+Paella x2 = $20.00
+Sangria x1 = $3.00
+CocaCola x1 = $1.50
+
+----------------
+Subtotal: $39.50
+IVA: $5.93
+TOTAL: $45.43
+-------------------------------------------------
+PEDIDO #2
+Cliente: sebatian | Total: $32.05
+Productos:
+Seco de Pollo x3 = $9.00
+Cocacola x3 = $15.00
+Seco de Carne x1 = $3.00
+
+----------------
+Subtotal: $27.00
+IVA: $4.05
+TOTAL: $31.05
+-------------------------------------------------
+

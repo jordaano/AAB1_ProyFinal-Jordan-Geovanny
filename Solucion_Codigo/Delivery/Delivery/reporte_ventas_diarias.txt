@@ -1,0 +1,29 @@
+=================================================
+     REPORTE DE VENTAS Y CIERRE DE CAJA          
+=================================================
+
+1. RENDIMIENTO DE RESTAURANTES:
+   -> Mayor volumen de venta: Spanish ($11.50)
+   -> Menor volumen de venta: Ecuadorian ($0.00)
+
+2. PREFERENCIAS DEL CONSUMIDOR:
+   -> Producto más vendido: Gazpacho x2 = $10.00 (1 unidades)
+
+3. BALANCE ECONÓMICO GLOBAL:
+   -> Total Recaudado en Caja: $11.50
+=================================================
+
+======= REPORTE GENERAL DE VENTAS DEL DÍA =======
+
+Cantidad de pedidos procesados: 1
+PEDIDO #1
+Cliente: sebastian | Total: $11.5
+Productos:
+Gazpacho x2 = $10.00
+
+----------------
+Subtotal: $10.00
+IVA: $1.50
+TOTAL: $11.50
+-------------------------------------------------
+
