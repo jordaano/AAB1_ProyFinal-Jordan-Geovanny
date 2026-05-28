@@ -3,26 +3,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package vista;
+
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import javax.swing.JOptionPane;
 import modelo.Delivery;
+
 /**
  *
  * @author SebastianCodena
  */
 public class DeliveryVista extends javax.swing.JFrame {
-double totalPedido= 0;
-double costoDelivery = 0;
-double totalFinal = 0;
-String resumenPedido = "";
-double subtotal = 0;
-double iva = 0;
-String restauranteOrigen="";
 
-
-
-
+    double totalPedido = 0;
+    double costoDelivery = 0;
+    double totalFinal = 0;
+    String resumenPedido = "";
+    double subtotal = 0;
+    double iva = 0;
+    String restauranteOrigen = "";
 
     /**
      * Creates new form DeliveryVista
@@ -30,17 +29,21 @@ String restauranteOrigen="";
     public DeliveryVista() {
         initComponents();
     }
-public void recibirTotal(double total){
-    totalPedido = total;
-}
-public void recibirDatos(String resumen,double sub,double ivaPedido){
-    resumenPedido = resumen;
-    subtotal = sub;
-    iva = ivaPedido;
-}
-public void recibirOrigen(String origen) {
+
+    public void recibirTotal(double total) {
+        totalPedido = total;
+    }
+
+    public void recibirDatos(String resumen, double sub, double ivaPedido) {
+        resumenPedido = resumen;
+        subtotal = sub;
+        iva = ivaPedido;
+    }
+
+    public void recibirOrigen(String origen) {
         this.restauranteOrigen = origen;
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -78,19 +81,20 @@ public void recibirOrigen(String origen) {
 
         btnCalcular.setBackground(new java.awt.Color(0, 0, 0));
         btnCalcular.setForeground(new java.awt.Color(255, 255, 255));
-        btnCalcular.setText("CalcularDelivery");
+        btnCalcular.setText("Calcular Delivery");
         btnCalcular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCalcularActionPerformed(evt);
             }
         });
 
+        lblTotal.setBackground(new java.awt.Color(51, 51, 51));
         lblTotal.setForeground(new java.awt.Color(255, 255, 255));
         lblTotal.setText("Total");
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/vector-concepto-entrega-alimentos-linea_1162942-1594.jpg"))); // NOI18N
 
-        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
+        jTextArea1.setBackground(new java.awt.Color(51, 51, 51));
         jTextArea1.setColumns(20);
         jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea1.setRows(5);
@@ -122,8 +126,8 @@ public void recibirOrigen(String origen) {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jLabel3)
                                     .addComponent(lblTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(30, 30, 30)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(28, 28, 28)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -139,15 +143,11 @@ public void recibirOrigen(String origen) {
                 .addComponent(btnCalcular)
                 .addGap(40, 40, 40)
                 .addComponent(lblTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(61, 61, 61)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(61, 61, 61)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(79, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(87, 87, 87))))
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -167,128 +167,95 @@ public void recibirOrigen(String origen) {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
-       double km = Double.parseDouble(txtKm.getText());
+        String kmTexto = txtKm.getText().trim();
+        if (kmTexto.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Por favor, ingrese la distancia en kilómetros.", "Datos Faltantes", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
 
-Delivery d = new Delivery(km);
-costoDelivery = d.calcularCosto();
-totalFinal = totalPedido + costoDelivery;
+        double km = Double.parseDouble(txtKm.getText());
 
-lblTotal.setText("TOTAL: $" + totalFinal);
+        Delivery d = new Delivery(km);
+        costoDelivery = d.calcularCosto();
+        totalFinal = totalPedido + costoDelivery;
 
-int opcion = JOptionPane.showConfirmDialog(
-        null,
-        "El total a pagar es: $" + totalFinal + "\n¿Desea pagar?",
-        "Confirmar Pago",
-        JOptionPane.YES_NO_OPTION
-);
+        lblTotal.setText("TOTAL: $" + totalFinal);
 
-if(opcion == JOptionPane.YES_OPTION){
+        int opcion = JOptionPane.showConfirmDialog(
+                null,
+                "El total a pagar es: $" + totalFinal + "\n¿Desea pagar?",
+                "Confirmar Pago",
+                JOptionPane.YES_NO_OPTION
+        );
 
-    JOptionPane.showMessageDialog(
-            null,
-            "Pedido enviado\nPronto llegara a su domicilio\nGracias por su compra"
-    );
-    
-    int factura = JOptionPane.showConfirmDialog(
-            null,
-            "¿Desea generar factura?",
-            "Factura",
-            JOptionPane.YES_NO_OPTION
-    );
-    
-    
-    String nombreReporte = "Cliente Delivery (Consumidor Final)";
+        if (opcion == JOptionPane.YES_OPTION) {
 
-    if(factura == JOptionPane.YES_OPTION){
-        try{
-            FileWriter archivo = new FileWriter("factura.txt");
-            PrintWriter escribir = new PrintWriter(archivo);
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Pedido enviado\nPronto llegara a su domicilio\nGracias por su compra"
+            );
 
-            String nombre = JOptionPane.showInputDialog("Ingrese nombre");
-            String cedula = JOptionPane.showInputDialog("Ingrese cedula");
-            String direccion = JOptionPane.showInputDialog("Ingrese direccion");
-            
-           
-            if (nombre != null && !nombre.trim().isEmpty()) {
-                nombreReporte = nombre;
+            int factura = JOptionPane.showConfirmDialog(
+                    null,
+                    "¿Desea generar factura?",
+                    "Factura",
+                    JOptionPane.YES_NO_OPTION
+            );
+
+            String nombreReporte = "Cliente Delivery (Consumidor Final)";
+
+            if (factura == JOptionPane.YES_OPTION) {
+                try {
+                    FileWriter archivo = new FileWriter("factura.txt");
+                    PrintWriter escribir = new PrintWriter(archivo);
+
+                    String nombre = JOptionPane.showInputDialog("Ingrese nombre");
+                    String cedula = JOptionPane.showInputDialog("Ingrese cedula");
+                    String direccion = JOptionPane.showInputDialog("Ingrese direccion");
+
+                    if (nombre != null && !nombre.trim().isEmpty()) {
+                        nombreReporte = nombre;
+                    }
+
+                    escribir.println("======= FACTURA =======");
+                    escribir.println("");
+                    escribir.println("Nombre: " + nombre);
+                    escribir.println("Cedula: " + cedula);
+                    escribir.println("Direccion: " + direccion);
+                    escribir.println("");
+                    escribir.println("PEDIDO:");
+                    escribir.println(resumenPedido);
+                    escribir.println("-----------------------");
+
+                    escribir.println("Delivery: $" + String.format("%.2f", costoDelivery));
+                    escribir.println("TOTAL NETO A PAGAR: $" + String.format("%.2f", totalFinal));
+
+                    escribir.close();
+
+                    JOptionPane.showMessageDialog(null, "Factura generada");
+
+                } catch (Exception e) {
+                    JOptionPane.showMessageDialog(null, "Error al generar archivo");
+                }
             }
 
-            escribir.println("======= FACTURA =======");
-            escribir.println("");
-            escribir.println("Nombre: " + nombre);
-            escribir.println("Cedula: " + cedula);
-            escribir.println("Direccion: " + direccion);
-            escribir.println("");
-            escribir.println("PEDIDO:");
-            escribir.println(resumenPedido);
-            escribir.println("-----------------------");
+            modelo.ReporteDiario.registrarVenta(nombreReporte, totalFinal, resumenPedido, restauranteOrigen);
 
-            escribir.println("Delivery: $" + String.format("%.2f", costoDelivery));
-            escribir.println("TOTAL NETO A PAGAR: $" + String.format("%.2f", totalFinal));
+            Comidas menuPrincipal = new Comidas();
+            menuPrincipal.setVisible(true);
+            this.dispose();
 
-            escribir.close();
-
-            JOptionPane.showMessageDialog(null, "Factura generada");
-
-        }catch(Exception e){
-            JOptionPane.showMessageDialog(null, "Error al generar archivo");
+        } else {
+            Comidas menuPrincipal = new Comidas();
+            menuPrincipal.setVisible(true);
+            this.dispose();
         }
-    }
-    
-  
-
-    modelo.ReporteDiario.registrarVenta(nombreReporte, totalFinal, resumenPedido, restauranteOrigen);
-
-  
-    Comidas menuPrincipal = new Comidas();
-    menuPrincipal.setVisible(true);
-    this.dispose();
-
-} else {
-    Comidas menuPrincipal = new Comidas();
-    menuPrincipal.setVisible(true);
-    this.dispose();
-}
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     private void txtKmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtKmActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtKmActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DeliveryVista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(DeliveryVista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(DeliveryVista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(DeliveryVista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new DeliveryVista().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCalcular;

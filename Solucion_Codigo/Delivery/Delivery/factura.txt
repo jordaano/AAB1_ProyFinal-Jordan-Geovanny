@@ -1,17 +1,17 @@
 ======= FACTURA =======
 
-Nombre: sebastian 
-Cedula: 1150107132
-Direccion: esteban godoy
+Nombre: jorda
+Cedula: 11
+Direccion: loja
 
 PEDIDO:
-Ramen x2 = $17.00
-Dumplins x1 = $7.00
+Paella x1 = $10,00
+Sangria x1 = $3,00
 
 ----------------
-Subtotal: $24.00
-IVA: $3.60
-TOTAL: $27.60
+Subtotal: $13,00
+IVA: $1,95
+TOTAL: $14,95
 -----------------------
-Delivery: $2.00
-TOTAL NETO A PAGAR: $29.60
+Delivery: $8,00
+TOTAL NETO A PAGAR: $22,95

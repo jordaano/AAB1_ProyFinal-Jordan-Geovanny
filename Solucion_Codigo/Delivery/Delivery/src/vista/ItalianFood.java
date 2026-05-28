@@ -19,21 +19,7 @@ public class ItalianFood extends javax.swing.JFrame {
     Producto Cocacola= new Producto("Cocacola",1.5,15);
     
     Pedido Pedido = new Pedido();
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /**
-     * Creates new form ItalianFood
-     */
+
     public ItalianFood() {
         initComponents();
     }
@@ -65,8 +51,8 @@ public class ItalianFood extends javax.swing.JFrame {
         Anadir5 = new javax.swing.JButton();
         Contador5 = new javax.swing.JLabel();
         Eliminar5 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnPedirOrden = new javax.swing.JButton();
+        btnVolver = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -75,7 +61,6 @@ public class ItalianFood extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
@@ -96,7 +81,7 @@ public class ItalianFood extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Menu Italian.png"))); // NOI18N
         jLabel2.setText("jLabel2");
 
-        Anadir1.setBackground(new java.awt.Color(0, 0, 0));
+        Anadir1.setBackground(new java.awt.Color(51, 51, 51));
         Anadir1.setForeground(new java.awt.Color(255, 255, 255));
         Anadir1.setText("Añadir");
         Anadir1.addActionListener(new java.awt.event.ActionListener() {
@@ -108,7 +93,7 @@ public class ItalianFood extends javax.swing.JFrame {
         Contador1.setForeground(new java.awt.Color(255, 255, 255));
         Contador1.setText("0");
 
-        Eliminar1.setBackground(new java.awt.Color(0, 0, 0));
+        Eliminar1.setBackground(new java.awt.Color(51, 51, 51));
         Eliminar1.setForeground(new java.awt.Color(255, 255, 255));
         Eliminar1.setText("Eliminar");
         Eliminar1.addActionListener(new java.awt.event.ActionListener() {
@@ -117,7 +102,7 @@ public class ItalianFood extends javax.swing.JFrame {
             }
         });
 
-        Anadir2.setBackground(new java.awt.Color(0, 0, 0));
+        Anadir2.setBackground(new java.awt.Color(51, 51, 51));
         Anadir2.setForeground(new java.awt.Color(255, 255, 255));
         Anadir2.setText("Añadir");
         Anadir2.addActionListener(new java.awt.event.ActionListener() {
@@ -129,7 +114,7 @@ public class ItalianFood extends javax.swing.JFrame {
         Contador2.setForeground(new java.awt.Color(255, 255, 255));
         Contador2.setText("0");
 
-        Eliminar2.setBackground(new java.awt.Color(0, 0, 0));
+        Eliminar2.setBackground(new java.awt.Color(51, 51, 51));
         Eliminar2.setForeground(new java.awt.Color(255, 255, 255));
         Eliminar2.setText("Eliminar");
         Eliminar2.addActionListener(new java.awt.event.ActionListener() {
@@ -138,7 +123,7 @@ public class ItalianFood extends javax.swing.JFrame {
             }
         });
 
-        Anadir3.setBackground(new java.awt.Color(0, 0, 0));
+        Anadir3.setBackground(new java.awt.Color(51, 51, 51));
         Anadir3.setForeground(new java.awt.Color(255, 255, 255));
         Anadir3.setText("Añadir");
         Anadir3.addActionListener(new java.awt.event.ActionListener() {
@@ -147,7 +132,7 @@ public class ItalianFood extends javax.swing.JFrame {
             }
         });
 
-        Eliminar3.setBackground(new java.awt.Color(0, 0, 0));
+        Eliminar3.setBackground(new java.awt.Color(51, 51, 51));
         Eliminar3.setForeground(new java.awt.Color(255, 255, 255));
         Eliminar3.setText("Eliminar");
         Eliminar3.addActionListener(new java.awt.event.ActionListener() {
@@ -159,7 +144,7 @@ public class ItalianFood extends javax.swing.JFrame {
         Contador3.setForeground(new java.awt.Color(255, 255, 255));
         Contador3.setText("0");
 
-        Anadir4.setBackground(new java.awt.Color(0, 0, 0));
+        Anadir4.setBackground(new java.awt.Color(51, 51, 51));
         Anadir4.setForeground(new java.awt.Color(255, 255, 255));
         Anadir4.setText("Añadir");
         Anadir4.addActionListener(new java.awt.event.ActionListener() {
@@ -171,7 +156,7 @@ public class ItalianFood extends javax.swing.JFrame {
         Contador4.setForeground(new java.awt.Color(255, 255, 255));
         Contador4.setText("0");
 
-        Eliminar4.setBackground(new java.awt.Color(0, 0, 0));
+        Eliminar4.setBackground(new java.awt.Color(51, 51, 51));
         Eliminar4.setForeground(new java.awt.Color(255, 255, 255));
         Eliminar4.setText("Eliminar");
         Eliminar4.addActionListener(new java.awt.event.ActionListener() {
@@ -180,7 +165,7 @@ public class ItalianFood extends javax.swing.JFrame {
             }
         });
 
-        Anadir5.setBackground(new java.awt.Color(0, 0, 0));
+        Anadir5.setBackground(new java.awt.Color(51, 51, 51));
         Anadir5.setForeground(new java.awt.Color(255, 255, 255));
         Anadir5.setText("Añadir");
         Anadir5.addActionListener(new java.awt.event.ActionListener() {
@@ -192,7 +177,7 @@ public class ItalianFood extends javax.swing.JFrame {
         Contador5.setForeground(new java.awt.Color(255, 255, 255));
         Contador5.setText("0");
 
-        Eliminar5.setBackground(new java.awt.Color(0, 0, 0));
+        Eliminar5.setBackground(new java.awt.Color(51, 51, 51));
         Eliminar5.setForeground(new java.awt.Color(255, 255, 255));
         Eliminar5.setText("Eliminar");
         Eliminar5.addActionListener(new java.awt.event.ActionListener() {
@@ -201,21 +186,21 @@ public class ItalianFood extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Pedir Orden");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnPedirOrden.setBackground(new java.awt.Color(51, 51, 51));
+        btnPedirOrden.setForeground(new java.awt.Color(255, 255, 255));
+        btnPedirOrden.setText("Pedir Orden");
+        btnPedirOrden.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnPedirOrdenActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 0));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Volver");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnVolver.setBackground(new java.awt.Color(51, 51, 51));
+        btnVolver.setForeground(new java.awt.Color(255, 255, 255));
+        btnVolver.setText("Volver");
+        btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnVolverActionPerformed(evt);
             }
         });
 
@@ -244,8 +229,6 @@ public class ItalianFood extends javax.swing.JFrame {
 
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Nombre: Pasta");
-
-        jLabel8.setText("jLabel8");
 
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Descripción: Pasta clásica italiana con salsa de tomates y albahaca fresca.");
@@ -288,14 +271,13 @@ public class ItalianFood extends javax.swing.JFrame {
                                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel7)
                                     .addComponent(jLabel9)
                                     .addComponent(jLabel10)
                                     .addComponent(jLabel13)
                                     .addComponent(jLabel14)
                                     .addComponent(jLabel15)))
-                            .addComponent(jButton1))
+                            .addComponent(btnPedirOrden))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -347,7 +329,7 @@ public class ItalianFood extends javax.swing.JFrame {
                                     .addComponent(Eliminar3)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(92, 92, 92)
-                        .addComponent(jButton2)
+                        .addComponent(btnVolver)
                         .addGap(360, 360, 360)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -358,14 +340,12 @@ public class ItalianFood extends javax.swing.JFrame {
                 .addGap(14, 14, 14)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jButton2))
+                    .addComponent(btnVolver))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
                     .addComponent(jLabel19))
-                .addGap(2, 2, 2)
-                .addComponent(jLabel8)
-                .addGap(18, 18, 18)
+                .addGap(36, 36, 36)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -387,46 +367,44 @@ public class ItalianFood extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Anadir2)
                             .addComponent(Contador2)
-                            .addComponent(Eliminar2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel10)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jLabel13)))
-                                .addGap(30, 30, 30)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(jLabel14)
-                                            .addComponent(Anadir3)
-                                            .addComponent(Contador3)
-                                            .addComponent(Eliminar3))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jLabel15))))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel17)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(Anadir4)
-                                    .addComponent(Contador4)
-                                    .addComponent(Eliminar4))
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel18)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(Anadir5)
-                                    .addComponent(Contador5)
-                                    .addComponent(Eliminar5))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addComponent(jButton1)
+                            .addComponent(Eliminar2)))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(jLabel10)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jLabel13)))
+                            .addGap(30, 30, 30)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel14)
+                                        .addComponent(Anadir3)
+                                        .addComponent(Contador3)
+                                        .addComponent(Eliminar3))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jLabel15))))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(jLabel17)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(Anadir4)
+                                .addComponent(Contador4)
+                                .addComponent(Eliminar4))
+                            .addGap(18, 18, 18)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(jLabel18)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(Anadir5)
+                                .addComponent(Contador5)
+                                .addComponent(Eliminar5)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnPedirOrden)
                 .addContainerGap(62, Short.MAX_VALUE))
         );
 
@@ -446,185 +424,145 @@ public class ItalianFood extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void Anadir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Anadir1ActionPerformed
-        boolean comprado = Pasta.comprar(1);
-        if (comprado){
-            int cantidad = Integer.parseInt(Contador1.getText());
-            cantidad ++;
-            
-            
-                Contador1.setText(String.valueOf(cantidad)); 
-                Pedido.agregarProducto(Pasta, 1);
-       }else{
-           JOptionPane.showMessageDialog(null,"No hay Pasta disponible");
-       }
-        
-    }//GEN-LAST:event_Anadir1ActionPerformed
+    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
+        Comidas menu = new Comidas();
+        menu.setVisible(true);
 
-    private void Eliminar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Eliminar1ActionPerformed
-        int cantidad = Integer.parseInt(Contador1.getText());
+        this.dispose();
+    }//GEN-LAST:event_btnVolverActionPerformed
 
-             if(cantidad > 0){
+    private void btnPedirOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPedirOrdenActionPerformed
+        PedidoSpanish ventana = new PedidoSpanish();
 
-                    cantidad--;
+        ventana.mostrarPedido(Pedido.getResumen());
+        ventana.recibirTotal(Pedido.getTotalConIVA());
+        ventana.establecerOrigen("Italian");
+        ventana.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnPedirOrdenActionPerformed
 
-                Contador1.setText(String.valueOf(cantidad));
-    }
-    }//GEN-LAST:event_Eliminar1ActionPerformed
+    private void Eliminar5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Eliminar5ActionPerformed
+        int cantidad = Integer.parseInt(Contador5.getText());
 
-    private void Anadir2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Anadir2ActionPerformed
-        boolean comprado = Pizza.comprar(1);
-        if (comprado){
-            int cantidad = Integer.parseInt(Contador2.getText());
-            cantidad ++;
-            
-            
-                Contador2.setText(String.valueOf(cantidad)); 
-                Pedido.agregarProducto(Pizza, 1);
-       }else{
-           JOptionPane.showMessageDialog(null,"No hay Pizza disponible");
-       }
-        
-    }//GEN-LAST:event_Anadir2ActionPerformed
+        if(cantidad > 0){
 
-    private void Eliminar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Eliminar2ActionPerformed
-         int cantidad = Integer.parseInt(Contador2.getText());
+            cantidad--;
 
-             if(cantidad > 0){
-
-                    cantidad--;
-
-                Contador2.setText(String.valueOf(cantidad));
-    }
-    }//GEN-LAST:event_Eliminar2ActionPerformed
-
-    private void Anadir3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Anadir3ActionPerformed
-         boolean comprado = lasania.comprar(1);
-        if (comprado){
-            int cantidad = Integer.parseInt(Contador3.getText());
-            cantidad ++;
-            
-            
-                Contador3.setText(String.valueOf(cantidad)); 
-                Pedido.agregarProducto(lasania, 1);
-       }else{
-           JOptionPane.showMessageDialog(null,"No hay lasania disponible");
-       }
-    }//GEN-LAST:event_Anadir3ActionPerformed
-
-    private void Eliminar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Eliminar3ActionPerformed
-      int cantidad = Integer.parseInt(Contador3.getText());
-
-             if(cantidad > 0){
-
-                    cantidad--;
-
-                Contador3.setText(String.valueOf(cantidad));
-    }
-    }//GEN-LAST:event_Eliminar3ActionPerformed
-
-    private void Anadir4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Anadir4ActionPerformed
-        boolean comprado = Aperol.comprar(1);
-        if (comprado){
-            int cantidad = Integer.parseInt(Contador4.getText());
-            cantidad ++;
-            
-            
-                Contador4.setText(String.valueOf(cantidad)); 
-                Pedido.agregarProducto(Aperol, 1);
-       }else{
-           JOptionPane.showMessageDialog(null,"No hay Aperol disponible");
-       }
-    }//GEN-LAST:event_Anadir4ActionPerformed
-
-    private void Eliminar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Eliminar4ActionPerformed
-         int cantidad = Integer.parseInt(Contador4.getText());
-
-             if(cantidad > 0){
-
-                    cantidad--;
-
-                Contador4.setText(String.valueOf(cantidad));
-    }
-    }//GEN-LAST:event_Eliminar4ActionPerformed
+            Contador5.setText(String.valueOf(cantidad));
+        }
+    }//GEN-LAST:event_Eliminar5ActionPerformed
 
     private void Anadir5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Anadir5ActionPerformed
         boolean comprado = Cocacola.comprar(1);
         if (comprado){
             int cantidad = Integer.parseInt(Contador5.getText());
             cantidad ++;
-            
-            
-                Contador5.setText(String.valueOf(cantidad)); 
-                Pedido.agregarProducto(Cocacola, 1);
-       }else{
-           JOptionPane.showMessageDialog(null,"No hay Cocacola disponible");
-       }
+
+            Contador5.setText(String.valueOf(cantidad));
+            Pedido.agregarProducto(Cocacola, 1);
+        }else{
+            JOptionPane.showMessageDialog(null,"No hay Cocacola disponible");
+        }
     }//GEN-LAST:event_Anadir5ActionPerformed
 
-    private void Eliminar5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Eliminar5ActionPerformed
-        int cantidad = Integer.parseInt(Contador5.getText());
+    private void Eliminar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Eliminar4ActionPerformed
+        int cantidad = Integer.parseInt(Contador4.getText());
 
-             if(cantidad > 0){
+        if(cantidad > 0){
 
-                    cantidad--;
+            cantidad--;
 
-                Contador5.setText(String.valueOf(cantidad));
-    }
-    }//GEN-LAST:event_Eliminar5ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-         PedidoSpanish ventana = new PedidoSpanish();
-        
-        ventana.mostrarPedido(Pedido.getResumen());
-        ventana.recibirTotal(Pedido.getTotalConIVA());
-        ventana.establecerOrigen("Italian");
-        ventana.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-         Comidas menu = new Comidas();
-    menu.setVisible(true);
-    
-    this.dispose();
-
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ItalianFood.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ItalianFood.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ItalianFood.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ItalianFood.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            Contador4.setText(String.valueOf(cantidad));
         }
-        //</editor-fold>
+    }//GEN-LAST:event_Eliminar4ActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new ItalianFood().setVisible(true);
-            }
-        });
-    }
+    private void Anadir4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Anadir4ActionPerformed
+        boolean comprado = Aperol.comprar(1);
+        if (comprado){
+            int cantidad = Integer.parseInt(Contador4.getText());
+            cantidad ++;
+
+            Contador4.setText(String.valueOf(cantidad));
+            Pedido.agregarProducto(Aperol, 1);
+        }else{
+            JOptionPane.showMessageDialog(null,"No hay Aperol disponible");
+        }
+    }//GEN-LAST:event_Anadir4ActionPerformed
+
+    private void Eliminar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Eliminar3ActionPerformed
+        int cantidad = Integer.parseInt(Contador3.getText());
+
+        if(cantidad > 0){
+
+            cantidad--;
+
+            Contador3.setText(String.valueOf(cantidad));
+        }
+    }//GEN-LAST:event_Eliminar3ActionPerformed
+
+    private void Anadir3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Anadir3ActionPerformed
+        boolean comprado = lasania.comprar(1);
+        if (comprado){
+            int cantidad = Integer.parseInt(Contador3.getText());
+            cantidad ++;
+
+            Contador3.setText(String.valueOf(cantidad));
+            Pedido.agregarProducto(lasania, 1);
+        }else{
+            JOptionPane.showMessageDialog(null,"No hay lasania disponible");
+        }
+    }//GEN-LAST:event_Anadir3ActionPerformed
+
+    private void Eliminar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Eliminar2ActionPerformed
+        int cantidad = Integer.parseInt(Contador2.getText());
+
+        if(cantidad > 0){
+
+            cantidad--;
+
+            Contador2.setText(String.valueOf(cantidad));
+        }
+    }//GEN-LAST:event_Eliminar2ActionPerformed
+
+    private void Anadir2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Anadir2ActionPerformed
+        boolean comprado = Pizza.comprar(1);
+        if (comprado){
+            int cantidad = Integer.parseInt(Contador2.getText());
+            cantidad ++;
+
+            Contador2.setText(String.valueOf(cantidad));
+            Pedido.agregarProducto(Pizza, 1);
+        }else{
+            JOptionPane.showMessageDialog(null,"No hay Pizza disponible");
+        }
+
+    }//GEN-LAST:event_Anadir2ActionPerformed
+
+    private void Eliminar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Eliminar1ActionPerformed
+        int cantidad = Integer.parseInt(Contador1.getText());
+
+        if(cantidad > 0){
+
+            cantidad--;
+
+            Contador1.setText(String.valueOf(cantidad));
+        }
+    }//GEN-LAST:event_Eliminar1ActionPerformed
+
+    private void Anadir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Anadir1ActionPerformed
+        boolean comprado = Pasta.comprar(1);
+        if (comprado){
+            int cantidad = Integer.parseInt(Contador1.getText());
+            cantidad ++;
+
+            Contador1.setText(String.valueOf(cantidad));
+            Pedido.agregarProducto(Pasta, 1);
+        }else{
+            JOptionPane.showMessageDialog(null,"No hay Pasta disponible");
+        }
+
+    }//GEN-LAST:event_Anadir1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Anadir1;
@@ -642,8 +580,8 @@ public class ItalianFood extends javax.swing.JFrame {
     private javax.swing.JButton Eliminar3;
     private javax.swing.JButton Eliminar4;
     private javax.swing.JButton Eliminar5;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnPedirOrden;
+    private javax.swing.JButton btnVolver;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -661,7 +599,6 @@ public class ItalianFood extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables

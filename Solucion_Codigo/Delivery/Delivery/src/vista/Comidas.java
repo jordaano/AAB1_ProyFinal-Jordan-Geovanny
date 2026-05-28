@@ -8,6 +8,7 @@ package vista;
  *
  * @author SebastianCodena
  */
+import java.io.*;
 public class Comidas extends javax.swing.JFrame {
 
     /**
@@ -27,11 +28,11 @@ public class Comidas extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnRestEspanol = new javax.swing.JButton();
+        btnRestChino = new javax.swing.JButton();
+        btnRestItalia = new javax.swing.JButton();
+        btnRestEcuador = new javax.swing.JButton();
+        btnCerrarCaja = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
@@ -39,49 +40,49 @@ public class Comidas extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 0));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Spanish.png"))); // NOI18N
-        jButton2.setText("jButton2");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnRestEspanol.setBackground(new java.awt.Color(0, 0, 0));
+        btnRestEspanol.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Spanish.png"))); // NOI18N
+        btnRestEspanol.setText("jButton2");
+        btnRestEspanol.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnRestEspanolActionPerformed(evt);
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ChineseFod.png"))); // NOI18N
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnRestChino.setBackground(new java.awt.Color(0, 0, 0));
+        btnRestChino.setForeground(new java.awt.Color(255, 255, 255));
+        btnRestChino.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ChineseFod.png"))); // NOI18N
+        btnRestChino.setText("jButton1");
+        btnRestChino.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnRestChinoActionPerformed(evt);
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(0, 0, 0));
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Italian.png"))); // NOI18N
-        jButton4.setText("jButton4");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnRestItalia.setBackground(new java.awt.Color(0, 0, 0));
+        btnRestItalia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Italian.png"))); // NOI18N
+        btnRestItalia.setText("jButton4");
+        btnRestItalia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnRestItaliaActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 0));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ecuadorian.png"))); // NOI18N
-        jButton3.setText("jButton3");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnRestEcuador.setBackground(new java.awt.Color(0, 0, 0));
+        btnRestEcuador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ecuadorian.png"))); // NOI18N
+        btnRestEcuador.setText("jButton3");
+        btnRestEcuador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnRestEcuadorActionPerformed(evt);
             }
         });
 
-        jButton5.setBackground(new java.awt.Color(0, 0, 0));
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Cerrar Caja");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnCerrarCaja.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarCaja.setForeground(new java.awt.Color(255, 255, 255));
+        btnCerrarCaja.setText("Cerrar Caja");
+        btnCerrarCaja.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnCerrarCajaActionPerformed(evt);
             }
         });
 
@@ -90,18 +91,18 @@ public class Comidas extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(55, 55, 55)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnRestChino, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRestEcuador, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
-                .addGap(96, 96, 96))
+                    .addComponent(btnRestItalia, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRestEspanol, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                .addGap(43, 43, 43))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(253, 253, 253)
-                .addComponent(jButton5)
+                .addComponent(btnCerrarCaja)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -109,14 +110,14 @@ public class Comidas extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE, false)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnRestEspanol, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRestChino, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton5)
+                .addComponent(btnCerrarCaja)
                 .addGap(13, 13, 13)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnRestItalia, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRestEcuador, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(79, Short.MAX_VALUE))
         );
 
@@ -134,80 +135,91 @@ public class Comidas extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnRestChinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestChinoActionPerformed
         ChineseFood menu = new ChineseFood();
 
             menu.setVisible(true);
 
                 this.dispose();        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnRestChinoActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnRestEspanolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestEspanolActionPerformed
        SpanishFood menu = new SpanishFood();
 
             menu.setVisible(true);
 
                 this.dispose(); 
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnRestEspanolActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnRestEcuadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestEcuadorActionPerformed
         EcuadorianFood menu = new EcuadorianFood();
 
             menu.setVisible(true);
 
                 this.dispose(); 
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnRestEcuadorActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnRestItaliaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestItaliaActionPerformed
         ItalianFood menu = new ItalianFood();
 
             menu.setVisible(true);
 
                 this.dispose(); 
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btnRestItaliaActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btnCerrarCajaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarCajaActionPerformed
         try {
-       
-        java.io.FileWriter archivoReporte = new java.io.FileWriter("reporte_ventas_diarias.txt");
-        java.io.PrintWriter escribir = new java.io.PrintWriter(archivoReporte);
+        double ingresosTotales = modelo.ReporteDiario.obtenerTotalCaja(); 
+        
+        if (ingresosTotales == 0) {
+            javax.swing.JOptionPane.showMessageDialog(this, 
+                    "No se pueden registrar cierres de caja ni generar reportes porque no hay ventas realizadas el día de hoy.", 
+                    "Caja Vacía", 
+                    javax.swing.JOptionPane.WARNING_MESSAGE);
+            return; 
+        }
+            
+            
 
       
         String masVendidoRestaurante = modelo.ReporteDiario.obtenerRestauranteMayorVenta();
         String menosVendidoRestaurante = modelo.ReporteDiario.obtenerRestauranteMenorVenta();
         String productoEstrella = modelo.ReporteDiario.obtenerProductoMasVendido();
-        double ingresosTotales = modelo.ReporteDiario.obtenerTotalCaja();
-
-      
         String historialVentas = modelo.ReporteDiario.obtenerReporteGeneral();
 
-      
-        escribir.println("=================================================");
-        escribir.println("     REPORTE DE VENTAS Y CIERRE DE CAJA          ");
-        escribir.println("=================================================");
-        escribir.println("");
-        escribir.println("1. RENDIMIENTO DE RESTAURANTES:");
-        escribir.println("   -> Mayor volumen de venta: " + masVendidoRestaurante);
-        escribir.println("   -> Menor volumen de venta: " + menosVendidoRestaurante);
-        escribir.println("");
-        escribir.println("2. PREFERENCIAS DEL CONSUMIDOR:");
-        escribir.println("   -> Producto más vendido: " + productoEstrella);
-        escribir.println("");
-        escribir.println("3. BALANCE ECONÓMICO GLOBAL:");
-        escribir.println("   -> Total Recaudado en Caja: $" + String.format("%.2f", ingresosTotales));
-        escribir.println("=================================================");
-        escribir.println("");
+        StringBuilder reporteCompleto = new StringBuilder();
+        reporteCompleto.append("=================================================\n");
+        reporteCompleto.append("      REPORTE DE VENTAS Y CIERRE DE CAJA          \n");
+        reporteCompleto.append("=================================================\n\n");
+        reporteCompleto.append("1. RENDIMIENTO DE RESTAURANTES:\n");
+        reporteCompleto.append("   -> Mayor volumen de venta: ").append(masVendidoRestaurante).append("\n");
+        reporteCompleto.append("   -> Menor volumen de venta: ").append(menosVendidoRestaurante).append("\n\n");
+        reporteCompleto.append("2. PREFERENCIAS DEL CONSUMIDOR:\n");
+        reporteCompleto.append("   -> Producto más vendido: ").append(productoEstrella).append("\n\n");
+        reporteCompleto.append("3. BALANCE ECONÓMICO GLOBAL:\n");
+        reporteCompleto.append("   -> Total Recaudado en Caja: $").append(String.format("%.2f", ingresosTotales)).append("\n");
+        reporteCompleto.append("=================================================\n\n");
+        reporteCompleto.append(historialVentas);;
         
      
-        escribir.println(historialVentas);
+        java.io.FileWriter archivoReporte = new java.io.FileWriter("reporte_ventas_diarias.txt");
+        java.io.PrintWriter escribir = new java.io.PrintWriter(archivoReporte);
+        escribir.print(reporteCompleto.toString());
+        escribir.close();
+
+        javax.swing.JTextArea areaTexto = new javax.swing.JTextArea(reporteCompleto.toString());
+        areaTexto.setEditable(false); 
+        areaTexto.setFont(new java.awt.Font("Monospaced", java.awt.Font.PLAIN, 12)); 
+        
+        javax.swing.JScrollPane scrollPane = new javax.swing.JScrollPane(areaTexto);
+        scrollPane.setPreferredSize(new java.awt.Dimension(500, 400));
 
       
-        escribir.close();
 
     
         javax.swing.JOptionPane.showMessageDialog(this, 
-                "Se ha generado el Reporte Diario de Ventas.", 
-                "Cierre de Caja", 
+                scrollPane, 
+                "Cierre de Caja - Reporte Diario", 
                 javax.swing.JOptionPane.INFORMATION_MESSAGE);
 
     } catch (Exception e) {
@@ -217,49 +229,15 @@ public class Comidas extends javax.swing.JFrame {
                 javax.swing.JOptionPane.ERROR_MESSAGE);
     }
 
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btnCerrarCajaActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Comidas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Comidas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Comidas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Comidas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Comidas().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton btnCerrarCaja;
+    private javax.swing.JButton btnRestChino;
+    private javax.swing.JButton btnRestEcuador;
+    private javax.swing.JButton btnRestEspanol;
+    private javax.swing.JButton btnRestItalia;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

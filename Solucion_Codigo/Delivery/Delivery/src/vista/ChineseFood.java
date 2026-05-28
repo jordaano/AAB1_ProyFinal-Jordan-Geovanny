@@ -54,8 +54,8 @@ Pedido Pedido = new Pedido();
         Anadir5 = new javax.swing.JButton();
         Eliminar5 = new javax.swing.JButton();
         Contador5 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnPedirOrden = new javax.swing.JButton();
+        btnVolver = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -66,7 +66,6 @@ Pedido Pedido = new Pedido();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
@@ -89,7 +88,7 @@ Pedido Pedido = new Pedido();
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Menu Chinese.png"))); // NOI18N
         jLabel1.setText("jLabel1");
 
-        Anadir1.setBackground(new java.awt.Color(0, 0, 0));
+        Anadir1.setBackground(new java.awt.Color(51, 51, 51));
         Anadir1.setForeground(new java.awt.Color(255, 255, 255));
         Anadir1.setText("Añadir");
         Anadir1.addActionListener(new java.awt.event.ActionListener() {
@@ -102,7 +101,7 @@ Pedido Pedido = new Pedido();
         Contador1.setForeground(new java.awt.Color(255, 255, 255));
         Contador1.setText("0");
 
-        Eliminar1.setBackground(new java.awt.Color(0, 0, 0));
+        Eliminar1.setBackground(new java.awt.Color(51, 51, 51));
         Eliminar1.setForeground(new java.awt.Color(255, 255, 255));
         Eliminar1.setText("Eliminar");
         Eliminar1.addActionListener(new java.awt.event.ActionListener() {
@@ -111,7 +110,7 @@ Pedido Pedido = new Pedido();
             }
         });
 
-        Anadir2.setBackground(new java.awt.Color(0, 0, 0));
+        Anadir2.setBackground(new java.awt.Color(51, 51, 51));
         Anadir2.setForeground(new java.awt.Color(255, 255, 255));
         Anadir2.setText("Añadir");
         Anadir2.addActionListener(new java.awt.event.ActionListener() {
@@ -124,7 +123,7 @@ Pedido Pedido = new Pedido();
         Contador2.setForeground(new java.awt.Color(255, 255, 255));
         Contador2.setText("0");
 
-        Eliminar2.setBackground(new java.awt.Color(0, 0, 0));
+        Eliminar2.setBackground(new java.awt.Color(51, 51, 51));
         Eliminar2.setForeground(new java.awt.Color(255, 255, 255));
         Eliminar2.setText("Eliminar");
         Eliminar2.addActionListener(new java.awt.event.ActionListener() {
@@ -133,7 +132,7 @@ Pedido Pedido = new Pedido();
             }
         });
 
-        Anadir3.setBackground(new java.awt.Color(0, 0, 0));
+        Anadir3.setBackground(new java.awt.Color(51, 51, 51));
         Anadir3.setForeground(new java.awt.Color(255, 255, 255));
         Anadir3.setText("Añadir");
         Anadir3.addActionListener(new java.awt.event.ActionListener() {
@@ -146,7 +145,7 @@ Pedido Pedido = new Pedido();
         Contador3.setForeground(new java.awt.Color(255, 255, 255));
         Contador3.setText("0");
 
-        Eliminar3.setBackground(new java.awt.Color(0, 0, 0));
+        Eliminar3.setBackground(new java.awt.Color(51, 51, 51));
         Eliminar3.setForeground(new java.awt.Color(255, 255, 255));
         Eliminar3.setText("Eliminar");
         Eliminar3.addActionListener(new java.awt.event.ActionListener() {
@@ -155,7 +154,7 @@ Pedido Pedido = new Pedido();
             }
         });
 
-        Anadir4.setBackground(new java.awt.Color(0, 0, 0));
+        Anadir4.setBackground(new java.awt.Color(51, 51, 51));
         Anadir4.setForeground(new java.awt.Color(255, 255, 255));
         Anadir4.setText("Añadir");
         Anadir4.addActionListener(new java.awt.event.ActionListener() {
@@ -168,7 +167,7 @@ Pedido Pedido = new Pedido();
         Contador4.setForeground(new java.awt.Color(255, 255, 255));
         Contador4.setText("0");
 
-        Eliminar4.setBackground(new java.awt.Color(0, 0, 0));
+        Eliminar4.setBackground(new java.awt.Color(51, 51, 51));
         Eliminar4.setForeground(new java.awt.Color(255, 255, 255));
         Eliminar4.setText("Eliminar");
         Eliminar4.addActionListener(new java.awt.event.ActionListener() {
@@ -177,7 +176,7 @@ Pedido Pedido = new Pedido();
             }
         });
 
-        Anadir5.setBackground(new java.awt.Color(0, 0, 0));
+        Anadir5.setBackground(new java.awt.Color(51, 51, 51));
         Anadir5.setForeground(new java.awt.Color(255, 255, 255));
         Anadir5.setText("Añadir");
         Anadir5.addActionListener(new java.awt.event.ActionListener() {
@@ -186,7 +185,7 @@ Pedido Pedido = new Pedido();
             }
         });
 
-        Eliminar5.setBackground(new java.awt.Color(0, 0, 0));
+        Eliminar5.setBackground(new java.awt.Color(51, 51, 51));
         Eliminar5.setForeground(new java.awt.Color(255, 255, 255));
         Eliminar5.setText("Eliminar");
         Eliminar5.addActionListener(new java.awt.event.ActionListener() {
@@ -199,21 +198,21 @@ Pedido Pedido = new Pedido();
         Contador5.setForeground(new java.awt.Color(255, 255, 255));
         Contador5.setText("0");
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Pedir Orden");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnPedirOrden.setBackground(new java.awt.Color(51, 51, 51));
+        btnPedirOrden.setForeground(new java.awt.Color(255, 255, 255));
+        btnPedirOrden.setText("Pedir Orden");
+        btnPedirOrden.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnPedirOrdenActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 0));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Volver");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnVolver.setBackground(new java.awt.Color(51, 51, 51));
+        btnVolver.setForeground(new java.awt.Color(255, 255, 255));
+        btnVolver.setText("Volver");
+        btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnVolverActionPerformed(evt);
             }
         });
 
@@ -248,8 +247,6 @@ Pedido Pedido = new Pedido();
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Descripción: Caldo con fideos, huevo cocido, carne y vegetales frescos.");
 
-        jLabel14.setText("jLabel14");
-
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Descripción corta: Empanaditas de carne y vegetales, con de salsa agridulce.");
 
@@ -280,10 +277,7 @@ Pedido Pedido = new Pedido();
                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel16)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel16)
                             .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 406, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -297,10 +291,10 @@ Pedido Pedido = new Pedido();
                             .addComponent(jLabel11)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(51, 51, 51)
-                                .addComponent(jButton2)
+                                .addComponent(btnVolver)
                                 .addGap(239, 239, 239)
                                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jButton1)
+                            .addComponent(btnPedirOrden)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
@@ -361,7 +355,7 @@ Pedido Pedido = new Pedido();
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton2)
+                                .addComponent(btnVolver)
                                 .addGap(39, 39, 39))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel1)
@@ -417,7 +411,7 @@ Pedido Pedido = new Pedido();
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(40, 40, 40)
-                                .addComponent(jButton1))
+                                .addComponent(btnPedirOrden))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -426,7 +420,6 @@ Pedido Pedido = new Pedido();
                                     .addComponent(Eliminar5)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel14)
                             .addComponent(jLabel16)
                             .addComponent(Anadir3)
                             .addComponent(Eliminar3)
@@ -578,7 +571,7 @@ Pedido Pedido = new Pedido();
     }
     }//GEN-LAST:event_Eliminar5ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnPedirOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPedirOrdenActionPerformed
          PedidoSpanish ventana = new PedidoSpanish();
         
         ventana.mostrarPedido(Pedido.getResumen());
@@ -586,50 +579,17 @@ Pedido Pedido = new Pedido();
         ventana.establecerOrigen("Chinese");
         ventana.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnPedirOrdenActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
          Comidas menu = new Comidas();
     menu.setVisible(true);
     
     this.dispose();
 
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnVolverActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ChineseFood.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ChineseFood.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ChineseFood.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ChineseFood.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new ChineseFood().setVisible(true);
-            }
-        });
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Anadir1;
@@ -647,14 +607,13 @@ Pedido Pedido = new Pedido();
     private javax.swing.JButton Eliminar3;
     private javax.swing.JButton Eliminar4;
     private javax.swing.JButton Eliminar5;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnPedirOrden;
+    private javax.swing.JButton btnVolver;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;

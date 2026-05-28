@@ -57,8 +57,8 @@ public class SpanishFood extends javax.swing.JFrame {
         btnAgregar4 = new javax.swing.JButton();
         CantidadPt5 = new javax.swing.JLabel();
         btnEliminar4 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnPedirOrden = new javax.swing.JButton();
+        btnVolver = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -81,7 +81,7 @@ public class SpanishFood extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/paella_valenciana.jpg"))); // NOI18N
-        jLabel3.setText("jLabel3");
+        jLabel3.setText("           ");
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/tortilla-de-patatas-casera-y-tradicional.jpg"))); // NOI18N
         jLabel4.setText("jLabel4");
@@ -96,7 +96,7 @@ public class SpanishFood extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Bebidas");
 
-        btnAgregar.setBackground(new java.awt.Color(0, 0, 0));
+        btnAgregar.setBackground(new java.awt.Color(51, 51, 51));
         btnAgregar.setForeground(new java.awt.Color(255, 255, 255));
         btnAgregar.setText("Añadir");
         btnAgregar.addActionListener(new java.awt.event.ActionListener() {
@@ -108,7 +108,7 @@ public class SpanishFood extends javax.swing.JFrame {
         CantidadPt1.setForeground(new java.awt.Color(255, 255, 255));
         CantidadPt1.setText("0");
 
-        btnEliminar.setBackground(new java.awt.Color(0, 0, 0));
+        btnEliminar.setBackground(new java.awt.Color(51, 51, 51));
         btnEliminar.setForeground(new java.awt.Color(255, 255, 255));
         btnEliminar.setText("Eliminar");
         btnEliminar.addActionListener(new java.awt.event.ActionListener() {
@@ -117,7 +117,7 @@ public class SpanishFood extends javax.swing.JFrame {
             }
         });
 
-        btnAgregar1.setBackground(new java.awt.Color(0, 0, 0));
+        btnAgregar1.setBackground(new java.awt.Color(51, 51, 51));
         btnAgregar1.setForeground(new java.awt.Color(255, 255, 255));
         btnAgregar1.setText("Añadir");
         btnAgregar1.addActionListener(new java.awt.event.ActionListener() {
@@ -126,7 +126,7 @@ public class SpanishFood extends javax.swing.JFrame {
             }
         });
 
-        btnEliminar1.setBackground(new java.awt.Color(0, 0, 0));
+        btnEliminar1.setBackground(new java.awt.Color(51, 51, 51));
         btnEliminar1.setForeground(new java.awt.Color(255, 255, 255));
         btnEliminar1.setText("Eliminar");
         btnEliminar1.addActionListener(new java.awt.event.ActionListener() {
@@ -138,7 +138,7 @@ public class SpanishFood extends javax.swing.JFrame {
         CantidadPt2.setForeground(new java.awt.Color(255, 255, 255));
         CantidadPt2.setText("0");
 
-        btnAgregar2.setBackground(new java.awt.Color(0, 0, 0));
+        btnAgregar2.setBackground(new java.awt.Color(51, 51, 51));
         btnAgregar2.setForeground(new java.awt.Color(255, 255, 255));
         btnAgregar2.setText("Añadir");
         btnAgregar2.addActionListener(new java.awt.event.ActionListener() {
@@ -147,7 +147,7 @@ public class SpanishFood extends javax.swing.JFrame {
             }
         });
 
-        btnEliminar2.setBackground(new java.awt.Color(0, 0, 0));
+        btnEliminar2.setBackground(new java.awt.Color(51, 51, 51));
         btnEliminar2.setForeground(new java.awt.Color(255, 255, 255));
         btnEliminar2.setText("Eliminar");
         btnEliminar2.addActionListener(new java.awt.event.ActionListener() {
@@ -159,7 +159,7 @@ public class SpanishFood extends javax.swing.JFrame {
         CantidadPt3.setForeground(new java.awt.Color(255, 255, 255));
         CantidadPt3.setText("0");
 
-        btnAgregar3.setBackground(new java.awt.Color(0, 0, 0));
+        btnAgregar3.setBackground(new java.awt.Color(51, 51, 51));
         btnAgregar3.setForeground(new java.awt.Color(255, 255, 255));
         btnAgregar3.setText("Añadir");
         btnAgregar3.addActionListener(new java.awt.event.ActionListener() {
@@ -171,7 +171,7 @@ public class SpanishFood extends javax.swing.JFrame {
         CantidadPt4.setForeground(new java.awt.Color(255, 255, 255));
         CantidadPt4.setText("0");
 
-        btnEliminar3.setBackground(new java.awt.Color(0, 0, 0));
+        btnEliminar3.setBackground(new java.awt.Color(51, 51, 51));
         btnEliminar3.setForeground(new java.awt.Color(255, 255, 255));
         btnEliminar3.setText("Eliminar");
         btnEliminar3.addActionListener(new java.awt.event.ActionListener() {
@@ -180,7 +180,7 @@ public class SpanishFood extends javax.swing.JFrame {
             }
         });
 
-        btnAgregar4.setBackground(new java.awt.Color(0, 0, 0));
+        btnAgregar4.setBackground(new java.awt.Color(51, 51, 51));
         btnAgregar4.setForeground(new java.awt.Color(255, 255, 255));
         btnAgregar4.setText("Añadir");
         btnAgregar4.addActionListener(new java.awt.event.ActionListener() {
@@ -192,7 +192,7 @@ public class SpanishFood extends javax.swing.JFrame {
         CantidadPt5.setForeground(new java.awt.Color(255, 255, 255));
         CantidadPt5.setText("0");
 
-        btnEliminar4.setBackground(new java.awt.Color(0, 0, 0));
+        btnEliminar4.setBackground(new java.awt.Color(51, 51, 51));
         btnEliminar4.setForeground(new java.awt.Color(255, 255, 255));
         btnEliminar4.setText("Eliminar");
         btnEliminar4.addActionListener(new java.awt.event.ActionListener() {
@@ -201,21 +201,21 @@ public class SpanishFood extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Pedir Orden");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnPedirOrden.setBackground(new java.awt.Color(51, 51, 51));
+        btnPedirOrden.setForeground(new java.awt.Color(255, 255, 255));
+        btnPedirOrden.setText("Pedir Orden");
+        btnPedirOrden.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnPedirOrdenActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 0));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Volver");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnVolver.setBackground(new java.awt.Color(51, 51, 51));
+        btnVolver.setForeground(new java.awt.Color(255, 255, 255));
+        btnVolver.setText("Volver");
+        btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnVolverActionPerformed(evt);
             }
         });
 
@@ -259,13 +259,13 @@ public class SpanishFood extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(31, 31, 31)
-                        .addComponent(jButton2)
+                        .addComponent(btnVolver)
                         .addGap(262, 262, 262)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel8)
-                            .addComponent(jButton1)
+                            .addComponent(btnPedirOrden)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -325,7 +325,7 @@ public class SpanishFood extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(70, 70, 70)
-                .addComponent(jButton2)
+                .addComponent(btnVolver)
                 .addGap(29, 29, 29)
                 .addComponent(jLabel8)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -379,7 +379,7 @@ public class SpanishFood extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jLabel14)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1)
+                        .addComponent(btnPedirOrden)
                         .addGap(58, 58, 58))))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(22, 22, 22)
@@ -411,7 +411,7 @@ public class SpanishFood extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 6, Short.MAX_VALUE))
+                .addGap(0, 9, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -560,7 +560,7 @@ public class SpanishFood extends javax.swing.JFrame {
     }
     }//GEN-LAST:event_btnEliminar4ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnPedirOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPedirOrdenActionPerformed
          PedidoSpanish ventana = new PedidoSpanish();
         
         ventana.mostrarPedido(Pedido.getResumen());
@@ -568,51 +568,15 @@ public class SpanishFood extends javax.swing.JFrame {
         ventana.establecerOrigen("Spanish");
         ventana.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnPedirOrdenActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
          Comidas menu = new Comidas();
     menu.setVisible(true);
     
     this.dispose();
 
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SpanishFood.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SpanishFood.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SpanishFood.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SpanishFood.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new SpanishFood().setVisible(true);
-            }
-        });
-    }
-
+    }//GEN-LAST:event_btnVolverActionPerformed
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel CantidadPt1;
     private javax.swing.JLabel CantidadPt2;
@@ -629,8 +593,8 @@ public class SpanishFood extends javax.swing.JFrame {
     private javax.swing.JButton btnEliminar2;
     private javax.swing.JButton btnEliminar3;
     private javax.swing.JButton btnEliminar4;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnPedirOrden;
+    private javax.swing.JButton btnVolver;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

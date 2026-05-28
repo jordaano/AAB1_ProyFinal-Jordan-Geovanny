@@ -37,26 +37,25 @@ public class EcuadorianFood extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        Contador = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnAnadir1 = new javax.swing.JButton();
         Contador1 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        btnEliminar1 = new javax.swing.JButton();
+        btnAnadir2 = new javax.swing.JButton();
+        btnEliminar2 = new javax.swing.JButton();
         Contador2 = new javax.swing.JLabel();
-        jButton8 = new javax.swing.JButton();
+        btnAnadir3 = new javax.swing.JButton();
+        btnEliminar3 = new javax.swing.JButton();
         Contador3 = new javax.swing.JLabel();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
+        btnAnadir4 = new javax.swing.JButton();
         Contador4 = new javax.swing.JLabel();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
+        btnEliminar4 = new javax.swing.JButton();
+        btnAnadir5 = new javax.swing.JButton();
+        Contador5 = new javax.swing.JLabel();
+        btnEliminar5 = new javax.swing.JButton();
+        btnPedirOrden = new javax.swing.JButton();
+        btnVolver = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -82,126 +81,126 @@ public class EcuadorianFood extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Menu Ecuadorian.png"))); // NOI18N
         jLabel2.setText("jLabel2");
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 0));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Añadir");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnAnadir1.setBackground(new java.awt.Color(51, 51, 51));
+        btnAnadir1.setForeground(new java.awt.Color(255, 255, 255));
+        btnAnadir1.setText("Añadir");
+        btnAnadir1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        Contador.setForeground(new java.awt.Color(255, 255, 255));
-        Contador.setText("0");
-
-        jButton3.setBackground(new java.awt.Color(0, 0, 0));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Eliminar");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
-        jButton4.setBackground(new java.awt.Color(0, 0, 0));
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Añadir");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-
-        jButton5.setBackground(new java.awt.Color(0, 0, 0));
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Eliminar");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnAnadir1ActionPerformed(evt);
             }
         });
 
         Contador1.setForeground(new java.awt.Color(255, 255, 255));
         Contador1.setText("0");
 
-        jButton6.setBackground(new java.awt.Color(0, 0, 0));
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Añadir");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btnEliminar1.setBackground(new java.awt.Color(51, 51, 51));
+        btnEliminar1.setForeground(new java.awt.Color(255, 255, 255));
+        btnEliminar1.setText("Eliminar");
+        btnEliminar1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btnEliminar1ActionPerformed(evt);
             }
         });
 
-        jButton7.setBackground(new java.awt.Color(0, 0, 0));
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("Eliminar");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        btnAnadir2.setBackground(new java.awt.Color(51, 51, 51));
+        btnAnadir2.setForeground(new java.awt.Color(255, 255, 255));
+        btnAnadir2.setText("Añadir");
+        btnAnadir2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                btnAnadir2ActionPerformed(evt);
+            }
+        });
+
+        btnEliminar2.setBackground(new java.awt.Color(51, 51, 51));
+        btnEliminar2.setForeground(new java.awt.Color(255, 255, 255));
+        btnEliminar2.setText("Eliminar");
+        btnEliminar2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminar2ActionPerformed(evt);
             }
         });
 
         Contador2.setForeground(new java.awt.Color(255, 255, 255));
         Contador2.setText("0");
 
-        jButton8.setBackground(new java.awt.Color(0, 0, 0));
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("Añadir");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        btnAnadir3.setBackground(new java.awt.Color(51, 51, 51));
+        btnAnadir3.setForeground(new java.awt.Color(255, 255, 255));
+        btnAnadir3.setText("Añadir");
+        btnAnadir3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                btnAnadir3ActionPerformed(evt);
+            }
+        });
+
+        btnEliminar3.setBackground(new java.awt.Color(51, 51, 51));
+        btnEliminar3.setForeground(new java.awt.Color(255, 255, 255));
+        btnEliminar3.setText("Eliminar");
+        btnEliminar3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminar3ActionPerformed(evt);
             }
         });
 
         Contador3.setForeground(new java.awt.Color(255, 255, 255));
         Contador3.setText("0");
 
-        jButton9.setBackground(new java.awt.Color(0, 0, 0));
-        jButton9.setForeground(new java.awt.Color(255, 255, 255));
-        jButton9.setText("Eliminar");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        btnAnadir4.setBackground(new java.awt.Color(51, 51, 51));
+        btnAnadir4.setForeground(new java.awt.Color(255, 255, 255));
+        btnAnadir4.setText("Añadir");
+        btnAnadir4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
-            }
-        });
-
-        jButton10.setBackground(new java.awt.Color(0, 0, 0));
-        jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setText("Añadir");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                btnAnadir4ActionPerformed(evt);
             }
         });
 
         Contador4.setForeground(new java.awt.Color(255, 255, 255));
         Contador4.setText("0");
 
-        jButton11.setBackground(new java.awt.Color(0, 0, 0));
-        jButton11.setForeground(new java.awt.Color(255, 255, 255));
-        jButton11.setText("Eliminar");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        btnEliminar4.setBackground(new java.awt.Color(51, 51, 51));
+        btnEliminar4.setForeground(new java.awt.Color(255, 255, 255));
+        btnEliminar4.setText("Eliminar");
+        btnEliminar4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                btnEliminar4ActionPerformed(evt);
             }
         });
 
-        jButton12.setBackground(new java.awt.Color(0, 0, 0));
-        jButton12.setForeground(new java.awt.Color(255, 255, 255));
-        jButton12.setText("PedirOrden");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        btnAnadir5.setBackground(new java.awt.Color(51, 51, 51));
+        btnAnadir5.setForeground(new java.awt.Color(255, 255, 255));
+        btnAnadir5.setText("Añadir");
+        btnAnadir5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                btnAnadir5ActionPerformed(evt);
             }
         });
 
-        jButton13.setBackground(new java.awt.Color(0, 0, 0));
-        jButton13.setForeground(new java.awt.Color(255, 255, 255));
-        jButton13.setText("Volver");
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        Contador5.setForeground(new java.awt.Color(255, 255, 255));
+        Contador5.setText("0");
+
+        btnEliminar5.setBackground(new java.awt.Color(51, 51, 51));
+        btnEliminar5.setForeground(new java.awt.Color(255, 255, 255));
+        btnEliminar5.setText("Eliminar");
+        btnEliminar5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
+                btnEliminar5ActionPerformed(evt);
+            }
+        });
+
+        btnPedirOrden.setBackground(new java.awt.Color(51, 51, 51));
+        btnPedirOrden.setForeground(new java.awt.Color(255, 255, 255));
+        btnPedirOrden.setText("Pedir Orden");
+        btnPedirOrden.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPedirOrdenActionPerformed(evt);
+            }
+        });
+
+        btnVolver.setBackground(new java.awt.Color(51, 51, 51));
+        btnVolver.setForeground(new java.awt.Color(255, 255, 255));
+        btnVolver.setText("Volver");
+        btnVolver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVolverActionPerformed(evt);
             }
         });
 
@@ -210,8 +209,6 @@ public class EcuadorianFood extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Secodepollo.jpg"))); // NOI18N
         jLabel3.setText("jLabel1");
-
-        jLabel4.setText("jLabel1");
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/encebollado.jpg"))); // NOI18N
         jLabel5.setText("jLabel5");
@@ -265,7 +262,7 @@ public class EcuadorianFood extends javax.swing.JFrame {
                 .addGap(58, 58, 58)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton12)
+                        .addComponent(btnPedirOrden)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -276,24 +273,22 @@ public class EcuadorianFood extends javax.swing.JFrame {
                                     .addComponent(jLabel8)
                                     .addComponent(jLabel9))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton2)
+                                .addComponent(btnAnadir1)
                                 .addGap(18, 18, 18)
-                                .addComponent(Contador)
+                                .addComponent(Contador1)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton3))
+                                .addComponent(btnEliminar1))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jButton13, javax.swing.GroupLayout.Alignment.TRAILING))
+                                                .addComponent(btnVolver, javax.swing.GroupLayout.Alignment.TRAILING))
                                             .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(18, 18, 18)
-                                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(104, 104, 104)
+                                                .addGap(222, 222, 222)
                                                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -309,17 +304,17 @@ public class EcuadorianFood extends javax.swing.JFrame {
                                                         .addGap(176, 176, 176)
                                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                                                .addComponent(jButton6)
+                                                                .addComponent(btnAnadir3)
                                                                 .addGap(18, 18, 18)
-                                                                .addComponent(Contador2))
+                                                                .addComponent(Contador3))
                                                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                                                .addComponent(jButton4)
+                                                                .addComponent(btnAnadir2)
                                                                 .addGap(18, 18, 18)
-                                                                .addComponent(Contador1, javax.swing.GroupLayout.PREFERRED_SIZE, 6, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                                                .addComponent(Contador2, javax.swing.GroupLayout.PREFERRED_SIZE, 6, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                                                 .addGap(26, 26, 26)
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jButton7)
-                                                    .addComponent(jButton5)))))
+                                                    .addComponent(btnEliminar3)
+                                                    .addComponent(btnEliminar2)))))
                                     .addComponent(jLabel11))
                                 .addGap(176, 176, 176)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -328,19 +323,19 @@ public class EcuadorianFood extends javax.swing.JFrame {
                                     .addComponent(jLabel15)
                                     .addComponent(jLabel16)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jButton8)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(Contador3)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jButton9))
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel17)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jButton10)
+                                        .addComponent(btnAnadir4)
                                         .addGap(18, 18, 18)
                                         .addComponent(Contador4)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jButton11)))))
+                                        .addComponent(btnEliminar4))
+                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel17)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(btnAnadir5)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(Contador5)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnEliminar5)))))
                         .addContainerGap(25, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -351,17 +346,15 @@ public class EcuadorianFood extends javax.swing.JFrame {
                         .addGap(38, 38, 38)
                         .addComponent(jLabel2))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton13)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(79, 79, 79)
+                        .addComponent(btnVolver)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(91, 91, 91)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton2)
-                            .addComponent(Contador)
-                            .addComponent(jButton3)))
+                            .addComponent(btnAnadir1)
+                            .addComponent(Contador1)
+                            .addComponent(btnEliminar1)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -395,7 +388,7 @@ public class EcuadorianFood extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jLabel14)))
                         .addGap(37, 37, 37)
-                        .addComponent(jButton12)
+                        .addComponent(btnPedirOrden)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -407,12 +400,12 @@ public class EcuadorianFood extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(48, 48, 48)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jButton4)
-                                    .addComponent(Contador1)
-                                    .addComponent(jButton5)
-                                    .addComponent(jButton8)
-                                    .addComponent(Contador3)
-                                    .addComponent(jButton9))))
+                                    .addComponent(btnAnadir2)
+                                    .addComponent(Contador2)
+                                    .addComponent(btnEliminar2)
+                                    .addComponent(btnAnadir4)
+                                    .addComponent(Contador4)
+                                    .addComponent(btnEliminar4))))
                         .addGap(20, 20, 20)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -421,15 +414,15 @@ public class EcuadorianFood extends javax.swing.JFrame {
                                 .addComponent(jLabel17)
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jButton10)
-                                    .addComponent(Contador4)
-                                    .addComponent(jButton11)))
+                                    .addComponent(btnAnadir5)
+                                    .addComponent(Contador5)
+                                    .addComponent(btnEliminar5)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(66, 66, 66)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jButton6)
-                                    .addComponent(Contador2)
-                                    .addComponent(jButton7))))
+                                    .addComponent(btnAnadir3)
+                                    .addComponent(Contador3)
+                                    .addComponent(btnEliminar3))))
                         .addGap(165, 165, 165))))
         );
 
@@ -447,36 +440,8 @@ public class EcuadorianFood extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnAnadir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnadir1ActionPerformed
         boolean comprado = SecodePollo.comprar(1);
-       
-       if(comprado){
-         int cantidad = Integer.parseInt(Contador.getText());
-
-            cantidad++;
-
-                Contador.setText(String.valueOf(cantidad)); 
-                Pedido.agregarProducto(SecodePollo, 1);
-       }else{
-           JOptionPane.showMessageDialog(null,"No hay Seco de Pollo disponible");
-       }
-        
-        
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        int cantidad = Integer.parseInt(Contador.getText());
-
-             if(cantidad > 0){
-
-                    cantidad--;
-
-                Contador.setText(String.valueOf(cantidad));
-    }
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-         boolean comprado = Encebollado.comprar(1);
        
        if(comprado){
          int cantidad = Integer.parseInt(Contador1.getText());
@@ -484,15 +449,16 @@ public class EcuadorianFood extends javax.swing.JFrame {
             cantidad++;
 
                 Contador1.setText(String.valueOf(cantidad)); 
-                Pedido.agregarProducto(Encebollado, 1);
+                Pedido.agregarProducto(SecodePollo, 1);
        }else{
-           JOptionPane.showMessageDialog(null,"No hay Encebollado disponible");
+           JOptionPane.showMessageDialog(null,"No hay Seco de Pollo disponible");
        }
         
-    }//GEN-LAST:event_jButton4ActionPerformed
+        
+    }//GEN-LAST:event_btnAnadir1ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-         int cantidad = Integer.parseInt(Contador1.getText());
+    private void btnEliminar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminar1ActionPerformed
+        int cantidad = Integer.parseInt(Contador1.getText());
 
              if(cantidad > 0){
 
@@ -500,10 +466,10 @@ public class EcuadorianFood extends javax.swing.JFrame {
 
                 Contador1.setText(String.valueOf(cantidad));
     }
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btnEliminar1ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-         boolean comprado = SecodeCarne.comprar(1);
+    private void btnAnadir2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnadir2ActionPerformed
+         boolean comprado = Encebollado.comprar(1);
        
        if(comprado){
          int cantidad = Integer.parseInt(Contador2.getText());
@@ -511,14 +477,15 @@ public class EcuadorianFood extends javax.swing.JFrame {
             cantidad++;
 
                 Contador2.setText(String.valueOf(cantidad)); 
-                Pedido.agregarProducto(SecodeCarne, 1);
+                Pedido.agregarProducto(Encebollado, 1);
        }else{
-           JOptionPane.showMessageDialog(null,"No hay SecodeCarne disponible");
+           JOptionPane.showMessageDialog(null,"No hay Encebollado disponible");
        }
-    }//GEN-LAST:event_jButton6ActionPerformed
+        
+    }//GEN-LAST:event_btnAnadir2ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-       int cantidad = Integer.parseInt(Contador2.getText());
+    private void btnEliminar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminar2ActionPerformed
+         int cantidad = Integer.parseInt(Contador2.getText());
 
              if(cantidad > 0){
 
@@ -526,10 +493,10 @@ public class EcuadorianFood extends javax.swing.JFrame {
 
                 Contador2.setText(String.valueOf(cantidad));
     }
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_btnEliminar2ActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        boolean comprado = Horchata.comprar(1);
+    private void btnAnadir3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnadir3ActionPerformed
+         boolean comprado = SecodeCarne.comprar(1);
        
        if(comprado){
          int cantidad = Integer.parseInt(Contador3.getText());
@@ -537,13 +504,13 @@ public class EcuadorianFood extends javax.swing.JFrame {
             cantidad++;
 
                 Contador3.setText(String.valueOf(cantidad)); 
-                Pedido.agregarProducto(Horchata, 1);
+                Pedido.agregarProducto(SecodeCarne, 1);
        }else{
-           JOptionPane.showMessageDialog(null,"No hay Horchata disponible");
+           JOptionPane.showMessageDialog(null,"No hay SecodeCarne disponible");
        }
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_btnAnadir3ActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void btnEliminar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminar3ActionPerformed
        int cantidad = Integer.parseInt(Contador3.getText());
 
              if(cantidad > 0){
@@ -552,10 +519,10 @@ public class EcuadorianFood extends javax.swing.JFrame {
 
                 Contador3.setText(String.valueOf(cantidad));
     }
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }//GEN-LAST:event_btnEliminar3ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-         boolean comprado = Cocacola.comprar(1);
+    private void btnAnadir4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnadir4ActionPerformed
+        boolean comprado = Horchata.comprar(1);
        
        if(comprado){
          int cantidad = Integer.parseInt(Contador4.getText());
@@ -563,14 +530,14 @@ public class EcuadorianFood extends javax.swing.JFrame {
             cantidad++;
 
                 Contador4.setText(String.valueOf(cantidad)); 
-                Pedido.agregarProducto(Cocacola, 1);
+                Pedido.agregarProducto(Horchata, 1);
        }else{
-           JOptionPane.showMessageDialog(null,"No hay CocaCola disponible");
+           JOptionPane.showMessageDialog(null,"No hay Horchata disponible");
        }
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_btnAnadir4ActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        int cantidad = Integer.parseInt(Contador4.getText());
+    private void btnEliminar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminar4ActionPerformed
+       int cantidad = Integer.parseInt(Contador4.getText());
 
              if(cantidad > 0){
 
@@ -578,9 +545,35 @@ public class EcuadorianFood extends javax.swing.JFrame {
 
                 Contador4.setText(String.valueOf(cantidad));
     }
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }//GEN-LAST:event_btnEliminar4ActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void btnAnadir5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnadir5ActionPerformed
+         boolean comprado = Cocacola.comprar(1);
+       
+       if(comprado){
+         int cantidad = Integer.parseInt(Contador5.getText());
+
+            cantidad++;
+
+                Contador5.setText(String.valueOf(cantidad)); 
+                Pedido.agregarProducto(Cocacola, 1);
+       }else{
+           JOptionPane.showMessageDialog(null,"No hay CocaCola disponible");
+       }
+    }//GEN-LAST:event_btnAnadir5ActionPerformed
+
+    private void btnEliminar5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminar5ActionPerformed
+        int cantidad = Integer.parseInt(Contador5.getText());
+
+             if(cantidad > 0){
+
+                    cantidad--;
+
+                Contador5.setText(String.valueOf(cantidad));
+    }
+    }//GEN-LAST:event_btnEliminar5ActionPerformed
+
+    private void btnPedirOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPedirOrdenActionPerformed
           PedidoSpanish ventana = new PedidoSpanish();
         
         ventana.mostrarPedido(Pedido.getResumen());
@@ -589,70 +582,36 @@ public class EcuadorianFood extends javax.swing.JFrame {
         ventana.setVisible(true);
         ventana.establecerOrigen("Ecuadorian");
         this.dispose();
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_btnPedirOrdenActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
        Comidas menu = new Comidas();
     menu.setVisible(true);
     
     this.dispose();
 
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }//GEN-LAST:event_btnVolverActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(EcuadorianFood.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(EcuadorianFood.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(EcuadorianFood.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(EcuadorianFood.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new EcuadorianFood().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Contador;
     private javax.swing.JLabel Contador1;
     private javax.swing.JLabel Contador2;
     private javax.swing.JLabel Contador3;
     private javax.swing.JLabel Contador4;
+    private javax.swing.JLabel Contador5;
+    private javax.swing.JButton btnAnadir1;
+    private javax.swing.JButton btnAnadir2;
+    private javax.swing.JButton btnAnadir3;
+    private javax.swing.JButton btnAnadir4;
+    private javax.swing.JButton btnAnadir5;
+    private javax.swing.JButton btnEliminar1;
+    private javax.swing.JButton btnEliminar2;
+    private javax.swing.JButton btnEliminar3;
+    private javax.swing.JButton btnEliminar4;
+    private javax.swing.JButton btnEliminar5;
+    private javax.swing.JButton btnPedirOrden;
+    private javax.swing.JButton btnVolver;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -665,7 +624,6 @@ public class EcuadorianFood extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
